@@ -1,4 +1,4 @@
-# Flux exmaple to manage Helm Chart Deployment and Application
+# Flux example to manage Helm Chart Deployment and Application
 
 Please refer to the Flux documentation for [installation options.](https://fluxcd.io/docs/installation/)
 
