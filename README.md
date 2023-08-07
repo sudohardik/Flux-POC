@@ -5,7 +5,28 @@ Please refer to the Flux documentation for [installation options.](https://fluxc
 You can find the blog post for this repository here: [https://anaisurl.com/full-tutorial-getting-started-with-flux-cd/](https://anaisurl.com/full-tutorial-getting-started-with-flux-cd/)
 AND the YouTube tutorial: [https://youtu.be/5u45lXmhgxA](https://youtu.be/5u45lXmhgxA)
 
+Export your Git creentials
+```
+export GITHUB_TOKEN=<your-token>
+export GITHUB_USER=<your-username>
+```
+
+Install Flux in your K8s cluster
+```
+flux bootstrap github \
+  --owner=$GITHUB_USER \
+  --repository=Flux-POC \
+  --branch=main \
+  --path=./clusters/my-cluster \
+  --personal
+```
+
 ## Installing the Starboard Helm Chart
+
+Create the starboard namespace
+```
+kubectl create ns starboard-system
+```
 
 The Starboard Helm Chart can either be deployed through the following commands:
 ```
@@ -22,6 +43,11 @@ kubectl apply -f helm-starboard.yaml
 ```
 
 ## Installing an application through Flux
+
+Create the app namespace
+```
+kubectl create ns app
+```
 
 We are going to install the Kubernetes manifests from the following [Git repository](https://github.com/AnaisUrlichs/react-article-display): 
 
