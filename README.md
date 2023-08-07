@@ -5,7 +5,7 @@ Please refer to the Flux documentation for [installation options.](https://fluxc
 You can find the blog post for this repository here: [https://anaisurl.com/full-tutorial-getting-started-with-flux-cd/](https://anaisurl.com/full-tutorial-getting-started-with-flux-cd/)
 AND the YouTube tutorial: [https://youtu.be/5u45lXmhgxA](https://youtu.be/5u45lXmhgxA)
 
-Export your Git creentials
+Export your Git credentials
 ```
 export GITHUB_TOKEN=<your-token>
 export GITHUB_USER=<your-username>
