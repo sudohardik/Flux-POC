@@ -4,6 +4,7 @@ Please refer to the Flux documentation for [installation options.](https://fluxc
 
 You can find the blog post for this repository here: [https://anaisurl.com/full-tutorial-getting-started-with-flux-cd/](https://anaisurl.com/full-tutorial-getting-started-with-flux-cd/)
 AND the YouTube tutorial: [https://youtu.be/5u45lXmhgxA](https://youtu.be/5u45lXmhgxA)
+Other reference: [https://www.digitalocean.com/community/tutorials/how-to-set-up-a-continuous-delivery-pipeline-with-flux-on-digitalocean-kubernetes](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-continuous-delivery-pipeline-with-flux-on-digitalocean-kubernetes)
 
 Export your Git credentials
 ```
@@ -99,3 +100,9 @@ Create the alert:
 ```
 kubectl apply -f alert.yaml 
 ```
+## Some other useful Flux commands
+'''
+watch flux get kustomizations
+flux suspend kustomization kustomization_name
+flux resume kustomization kustomization_name
+'''
